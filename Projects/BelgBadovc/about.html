@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belg Badovc - Të gjithë për qentë endacak</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+        <h1>About Us</h1>
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <div class="title"><h1>Belg Badovc</h1>
+                <hr width="280px" class="hr">
+                <h1>Valton Hyseni</h1></div>
+                <p>Unë jam Valton Hyseni. <br>
+                    Punoj me qentë endacak. <br>
+                    Iniciativa ime është për të ndihmuar qentë endacak dhe qentë e keq-trajtuar. <br>
+
+                    Gjendem afër liqenit të Badovcit tek rruga Izet Ymeri. <br>
+
+                    Qentë i strehoj në shtëpinë e vjetër të gjyshërve të mij,
+                    por kam aq shumë qen sa nuk e kam mundësine financiare për ti ushqyer të gjithë. <br>
+
+                    Me kushtet që i kam mundohem t'ju ndihmoj qenëve. <br>
+
+                    Nëse gjeni ndojë qen endacak që i duhet ndihmë,
+                    atëherë më kontaktoni mua me numër të telefonit ose në email. <br>
+                    
+                    Për të më ndihmuar financiarisht më kontaktoni me numër të telefonit.
+                </p>
+                <a href="contact.html" class="hero-btn red-btn">Më kontakto</a>
+                <p>
+                    I am Valton Hyseni. <br>
+                    I work with stray dogs. <br>
+                    My initiative is to help stray dogs and mistreated dogs. <br>
+                    I am located near Badovc Lake on Izet Ymeri Street. <br>
+                    I keep the dogs in my grandparents' old house, but I have so many dogs that I can not afford to feed them all. <br>
+                    With the conditions I have I try to help dogs. <br>
+                    If you find a stray dog that needs help, then contact me by phone number or email. <br>
+                    To help me financially contact me by phone number. <br>
+                </p>
+                <a href="contact.html" class="hero-btn red-btn">Contact Me</a>
+                
+            </div>
+            <div class="about-col">
+                <video src="images/valton.mp4" controls></video>
+                <div class="about-horizontal">
+                    <img class="img1" src="images/valton.jpg" alt="">
+                    <img class="img2" src="images/valton2.jpg" alt="">
+                </div>
+        </div>
+    </section>
+   
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

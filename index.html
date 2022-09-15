@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Art Drini</title>
+</head>
+<body>
+    <!-- loading animation -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+
+    <!-- navigation bar -->
+
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#home">Art <span>Drini</span>.</a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#teams" class="menu-btn">Team</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Art Drini</div>
+                <div class="text-3">And I'm a <span>Front-End Developer</span></div>
+                <a href="#about">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile-1.jpeg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Art Drini and I'm a <span>Fornt-End Developer</span></div>
+                    <p>Hi, I'm Art Drini a 13 year old skilled Front-End Developer with over 3 years of experience.
+                        I'm known to a bunch of programming languages such as: HTML, CSS, JavaScript, Bootstrap, jQuery, jQueryUI & more.
+                        I go to a course called Digital School. There I learned how to CODE. Now I go there as an assistant and help teach other children.
+                        I've had a bunch of clients already, and they were very impressed of my work. If you want to learn more you can download my resume.
+                        <br> Bye for now!
+                    </p>
+                    <a href="images/Art's Resume.pdf" download="Art's Resume">Download resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>I'm a skilled Front-End Web Development with over 3 years of experience, especially with CSS.
+                        CSS is one of my favourite languages, and I can get very creative with it.
+                        I also know a bunch of other programming languages such as: HTML, CSS, JavaScript, Bootstrap, jQuery, PHP, MySQL & more.
+                    </p>
+                    <a href="images/Art's Resume.pdf" download="Art's Resume">Learn more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teams projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card" onclick="belgbadovc()">
+                    <div class="box">
+                        <img src="images/belgbadovc.png" alt="">
+                        <div class="text">Belg Badovc</div>
+                        <p>A client requested website, that you can visit at <a id="link1" target="_blank" href="https://belgbadovc.com">belgbadovc.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card" onclick="novembercodefest()">
+                    <div class="box">
+                        <img src="images/novembercodefest.png" alt="">
+                        <div class="text">Life in the Future</div>
+                        <p>November Code Fest Project for school</p>
+                    </div>
+                </div>
+                <div class="card" onclick="webcom()">
+                    <div class="box">
+                        <img src="images/WebCom.png" alt="">
+                        <div class="text">WebCom</div>
+                        <p>A group project that allows you to do website commissions</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My team</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-1.jpeg" alt="">
+                        <div class="text">Art Drini</div>
+                        <p>Skilled and Experienced Front-End Web Developer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-2.jpeg" alt="">
+                        <div class="text">Ledri Bilurdagu</div>
+                        <p>Experienced Front-End Web Developer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-3.jpeg" alt="">
+                        <div class="text">Harun Pasuli</div>
+                        <p>Creative Front-End Web Developer</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Hey, wanna get in touch with me and build a project together. Go ahead and contact me.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Art Drini</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Prizren, Kosovo</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">artdrini2@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#" onsubmit="emailjs.sendForm('service_mv2t4sh', 'template_yj9ame2', this); return false;">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required name="from_name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required name="from_email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required name="subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required name="message"></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // function sendEmail(event) {
+        //     event.preventDefault();
+        //     const contact_service = "service_mv2t4sh";
+        //     const contact_form = "template_yj9ame2";
+        //     emailjs.sendForm(contact_service, contact_form, "#contact-form")
+        //         .then(function() {
+        //             alert('SUCCESS! Your message was sent successfully.');
+        //         }, function(error) {
+        //             alert('FAILED...! Please try again later...', error);
+        //         });
+        // }
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Y8G9_812lEaQVsd2o");
+       })();
+    </script>
+</body>
+</html>

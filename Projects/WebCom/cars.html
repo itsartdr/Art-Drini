@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header2">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>JavaScript</h1>
+
+        <!-- about us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>JavaScript plans and offers</h1>
+                    <p>Purchase a JavaScript website and get: <br> -HTML & CSS website <br> -Add functionallity to your website <br> -Customer Service <br> - Quick website production (1-2 weeks) <br> -See progress on website at all times <br> -10% Off every
+                        week website is late <br> -Giant collection of themes</p>
+                    <p>JavaScript adds life to your website. JavaScript adds the ability to change the form of the website and much more. JavaScript is a crucial part of the website,thats why you can find it in every big company website such as youtube,
+                        tiktok, twitter and more! That's also why we decided on extremely cheap prices for the websites themselves!</p>
+                    <h3 style="color:red">WARNING! We will only secure your website, not the domain nor the server for your database.</h3>
+                </div>
+                <div class="about-col">
+                    <img src="images/cars.jpg" alt="">
+                </div>
+            </div>
+            <a href="purchase2" class="buy1">BUY NOW</a>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>This website is all about the FUTURE, it's showing things that could possibly happen in the FUTURE.</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>

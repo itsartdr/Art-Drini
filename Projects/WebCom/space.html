@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Offers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>HTML & CSS</h1>
+
+        <!-- about us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>HTML & CSS OFFERS</h1>
+
+                    <p> <br> -HTML & CSS Website <br> -Costumer Service <br> -Giant collection of themes <br> -Quick web creation (1-5 days)<br> -Ability to see how website is going at all times <br>
+                    </p>
+                    <p>Currently, HTML & CSS are the quickest way to make an extremely simple website. And because it is so simple, we try to make it as cheap as possible to buy.</p>
+                    <h3 style="color:red">WARNING! We will only secure your website, not the domain nor the server for your database.</h3>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpeg" alt="">
+                </div>
+            </div>
+            <a href="purchase1" class="buy1">BUY NOW</a>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>This website is all about the FUTURE, it's showing things that could possibly happen in the FUTURE.</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>

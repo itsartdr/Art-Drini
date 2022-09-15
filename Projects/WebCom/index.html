@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="header" id="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" id="daza" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>WEBCOM</h1>
+            <p>This website allows you to commission your own website from proffesional web developers.<br> We have many themes you can choose from. <br> We have many plans. <br> We have customer service.
+
+            </p>
+            <a href="#course" class="scroll-btn">Check it out</a>
+        </div>
+    </section>
+    <!-- course -->
+    <section class="course" id="course">
+        <h1>What options are there?</h1>
+        <div class="row">
+            <div class="course-col">
+                <a href="space.html">
+                    <h3>HTML & CSS</h3>
+                    <p>This offer includes: <br>HTML & CSS <br> Customer Service<br> Themes
+                        <hr> All in for only 10€
+                    </p>
+                </a>
+            </div>
+            <div class="course-col">
+                <a href="cars.html">
+                    <h3>JavaScript</h3>
+                    <p>This offer includes: <br>HTML & CSS & JS <br> Customer Service<br> Themes
+                        <hr> All in for only 15€
+                    </p>
+                </a>
+            </div>
+            <div class="course-col">
+                <a href="technology.html">
+                    <h3>Custom</h3>
+                    <p>This offer includes: <br>HTML & CSS & JS <br> Customer Service<br> Your own Custom Theme
+                        <hr>All in for only 25€
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Themes</h1>
+        <div class="row">
+            <div class="course-col">
+                <a href="elonmusk.html">
+                    <h3>Standard</h3>
+                    <p>Themes that can be used when making standard websites. These include most of the themes that can be found.</p>
+                </a>
+            </div>
+            <div class="course-col">
+                <a href="markzuckerberg.html">
+                    <h3>Proffesional</h3>
+                    <p>Themes that can be applied to most websites ran by different companies, usually used by businesses</p>
+                </a>
+            </div>
+            <div class="course-col">
+                <a href="billgates.html">
+                    <h3>Custom</h3>
+                    <p>Generate or create your own theme by using our own theme editor. You can only use this when you have purchased the Custom website.</p>
+                </a>
+            </div>
+        </div>
+        <a href="#header"><img class="scroll-top" src="images/scrollbutton.png" alt=""></a>
+    </section>
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>This place is all about creating a website where you can use it for anything. We here at WebCom believe this is the future of humanity. © All rights revered to all of the themes respective owners ©. </p>
+    </div>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

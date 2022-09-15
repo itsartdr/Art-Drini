@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>LIFE IN THE FUTURE</h1>
+            <p>This website is going to be about how the world is going to be in the future.<br>Are we going to be able to go to the MOON. <br> Are we going to have flying electiric cars in the FUTURE. <br> What is Elon Musk, Mark Zuckerberg working on right now.</p>
+            <a href="#course" class="scroll-btn">Check it out</a>
+        </div>
+    </section>
+    <!-- course -->
+    <section class="course" id="course">
+        <h1>What can we have in the FUTURE</h1>
+        <div class="row">
+            <div class="course-col">
+                <a href="space.html">
+                <h3>Space</h3>
+                <p>Are we going to be able to go to Space in the FUTURE. Pretty SOON we could go to the MOON, or even MARS.</p>
+            </a>
+            </div>
+            <div class="course-col">
+                <a href="cars.html">
+                <h3>Cars</h3>
+                <p>Is there going to be Full-Self-Driving Cars in the FUTURE. What is going on with Tesla Inc. Mercedes, etc.</p>
+            </a>
+            </div>
+            <div class="course-col">
+                <a href="technology.html">
+                <h3>Technology</h3>
+                <p>What is Technology going to be in the FUTURE. What is going on with Apple Inc. Microsoft, etc.</p>
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="course">
+        <h1>CEO'S</h1>
+        <div class="row">
+            <div class="course-col">
+                <a href="elonmusk.html">
+                <h3>Elon Musk</h3>
+                <p>Owner of TWO of the biggest Companies in the WORLD. Elon Musk owns Tesla Inc. and SpaceX. Elon Musk is trying to be the first person that wants to send people to MARS.</p>
+            </a>
+            </div>
+            <div class="course-col">
+                <a href="markzuckerberg.html">
+                <h3>Mark Zuckerberg</h3>
+                <p>Owner of the biggest Company in the WORLD. Mark Zuckerberg is the owner of FACEBOOK. What is happening with FACEBOOK, or should we say META.</p>
+            </a>
+            </div>
+            <div class="course-col">
+                <a href="billgates.html">
+                <h3>Bill Gates</h3>
+                <p>Owner of the biggest Company in the WORLD. Bill Gates is the owner of Microsoft. Microsoft also owns Windows, XBOX, Skype, Teams, MOJANG, LinkedIn, GitHUB, etc.</p>
+            </a>
+            </div>
+        </div>
+        <a href="#header"><img class="scroll-top" src="images/scrollbutton.png" alt=""></a>
+    </section>
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>This website is all about the FUTURE, it's showing things that could possibly happen in the FUTURE.</p>
+    </div>
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

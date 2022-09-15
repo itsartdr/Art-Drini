@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header5">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Mark Zuckerberg</h1>
+
+        <!-- about us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>What is Mark Zuckerberg up to right now</h1>
+                    <p>Owner of the biggest Company in the WORLD. Mark Zuckerberg is the owner of FACEBOOK. What is happening with FACEBOOK, or should we say META.</p>
+                    <p>For the first time in 17 years, Mark Zuckerberg has a new job title. On Thursday, he officially became the CEO and chairman of Meta, the new parent company name for Facebook. The rebrand is about solidifying the social media giant
+                        as being about the metaverse, which Zuckerberg sees as the future of the internet.
+
+                    </p>
+                </div>
+                <div class="about-col">
+                    <img src="images/markzuckerberg.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>This website is all about the FUTURE, it's showing things that could possibly happen in the FUTURE.</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>

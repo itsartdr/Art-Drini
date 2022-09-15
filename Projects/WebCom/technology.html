@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header3">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Custom</h1>
+
+        <!-- about us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Design your own website and we will build it for you. </h1>
+                    <p>This option comes with: <br> -HTML & CSS website <br> -Add functionallity to your website <br> -Customer Service <br> - Quick website production (2-4 weeks) <br> -See progress on website at all times <br> -10% Off every week website
+                        is late <br> -Your own custom theme</p>
+                    </p>
+                    <p>Sometimes, we want originality when making our websites. We can't just base it off of themes to help us build said websites. That's why you can send us your design, and we will build a website with your design and send it to you. At
+                        the extremely low price that you can only find at us.</p>
+                </div>
+
+                <div class="about-col">
+                    <img src="images/technology.jpg" alt="">
+                </div>
+            </div>
+            <a href="purchase3" class="buy1">BUY NOW</a>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>This website is all about the FUTURE, it's showing things that could possibly happen in the FUTURE.</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>
